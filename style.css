@@ -1,0 +1,82 @@
+.container {
+  padding: 16px;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10px;
+    
+}
+
+#myform{
+    padding: 50px;
+width: 100%;
+  
+  margin: auto;
+  
+  display: inline-block;
+  border: none;
+  background: #F5F5F5;
+    font-family: 'josefin sans',sans-serif;
+    outline-color: #008B8B;
+    color: #282C35;
+}
+
+input[type=text]{
+    width: 150px;
+    height: 25px;
+    margin: 20px 20px 20px 20px;
+}
+input[type=email]{
+    width: 300px;
+    height: 20px;
+    margin: 20px 20px 20px 20px;
+}
+input[type=number]{
+    width: 35px;
+    height: 20px;
+    margin: 20px 20px 20px 20px;
+}
+input[type=radio]{
+    width: 15px;
+    height: 13px;
+    margin: 2px 20px 20px 20px;
+}
+
+textarea{
+    width: 500px;
+    height: 200px;
+}
+input[type=checkbox]{
+    width: 15px;
+    height: 13px;
+    margin: 10px ;
+}
+button{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.reveal_if_yes{
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+    input[type="radio"]:checked ~ .reveal_if_yes,input[type="checkbox"]:checked ~ .reveal_if_yes
+    {
+        opacity: 1;
+        max-height: 100px;
+        overflow: visible;
+        padding: 10px 20px;
+        transform: scale(1);
+    }
