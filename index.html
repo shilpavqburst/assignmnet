@@ -8,11 +8,9 @@
         <title>Register</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    
     <body>
         <div class="container">
-         
-            <form id="myform" class="form" action="/thankyou.html"  >
+         <form id="myform" class="form" action="thankyou.html"  >
          <h1>Register</h1>
           <label for="fname"><b>First Name: <b/></label>
           <input type="text" id="fname" name="fname" required>
@@ -30,10 +28,7 @@
               <select name="yes_no" id="yes_no" required>
               <option value="yes">Yes</option>
               <option value="no">No</option>
-              </select><br>
-              
-              
-              
+              </select><br>    
          <p>Do you have a license? </p>
             <div>
                 <div>
@@ -43,8 +38,8 @@
                          <select name="vehicle" id="vehicle">
                               <option value="car">Car</option>
                               <option value="Bike">Two-wheeler</option>
-                              <option value="Heavy_vehicle">Heavy Vehicles</option></select>
-                              <br>
+                              <option value="Heavy_vehicle">Heavy Vehicles</option>
+                        </select><br>
                     </div>
                 </div>
               
@@ -53,10 +48,6 @@
                    <label for="choice_vehicle">No </label>
               </div>
               </div>
-              
-              
-              
-        
         <label for="options">How do you find about us?</label>
               <select name="options" id="options" required>
                   <option value="social media">Social Media Posts</option>
@@ -65,24 +56,13 @@
                   <option value="tv">Tv</option>
                   <option value="word">Word of mouth</option>
                   <option value="other">Other</option>
-              </select><br>      
-              
-              
-              
+              </select><br>            
         <p>Skills you can offer</p>
-              <textarea row="5" cols="60" name="description" placeholder="Write something.."></textarea><br>
-        
-              
+        <textarea row="5" cols="60" name="description" placeholder="Write something.."></textarea><br>
         <label>
-             <input type="checkbox"  name="remember" style="margin-bottom:15px" required>I agree to the Terms of Servive
+             <input type="checkbox"  name="remember" style="margin-bottom:15px" required>I agree to the  <a href="terms.html">terms of service</a> 
         </label><br>
-              
-              
-              <button type="submit" class="submit" onclick>Submit</button>
-    
-    
+        <button type="submit" class="submit" onclick>Submit</button>
         </form>
-    
-    </body> 
-    
+    </body>    
 </html>
