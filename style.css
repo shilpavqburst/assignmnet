@@ -1,27 +1,34 @@
 .container {
   padding: 16px;
 }
-h1{
-    text-align: center;
-    font-size: 60px;
-    margin-top: 10px;
-    
+body{
+    background-position: center;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
-
+h1{
+    width: 950px;
+    height: 40px;
+    color: #282C35;
+    margin: auto;
+    padding: 15px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    background-color:  lightsteelblue;   
+}
 #myform{
     padding: 50px;
-width: 100%;
-  
-  margin: auto;
-  
-  display: inline-block;
-  border: none;
-  background: #F5F5F5;
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    border: none;
+    background: #F5F5F5;
     font-family: 'josefin sans',sans-serif;
     outline-color: #008B8B;
     color: #282C35;
 }
-
 input[type=text]{
     width: 150px;
     height: 25px;
@@ -46,37 +53,40 @@ input[type=radio]{
 textarea{
     width: 500px;
     height: 200px;
-}
+    }
 input[type=checkbox]{
     width: 15px;
     height: 13px;
     margin: 10px ;
-}
+    }
 button{
-    margin-top: 20px;
-}
-
-
-
-
-
-
-
-
-
-
+    background-color: lightsteelblue;
+    display: block;
+    margin: 20px 0px 0px 20px;
+    text-align: center;
+    border-radius: 12px;
+    outline:none;
+    cursor: pointer;
+    transition: 0.25px;
+    height:50px;
+    width: 150px;
+    text-align: center;
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    }
 .reveal_if_yes{
     opacity: 0;
     max-height: 0;
     overflow: hidden;
     transform: scale(0.8);
     transition: 0.5s;
-}
-    input[type="radio"]:checked ~ .reveal_if_yes,input[type="checkbox"]:checked ~ .reveal_if_yes
+    }
+input[type="radio"]:checked ~ .reveal_if_yes,input[type="checkbox"]:checked ~ .reveal_if_yes
     {
-        opacity: 1;
-        max-height: 100px;
-        overflow: visible;
-        padding: 10px 20px;
-        transform: scale(1);
+     opacity: 1;
+     max-height: 100px;
+     overflow: visible;
+     padding: 10px 20px;
+     transform: scale(1);
     }
